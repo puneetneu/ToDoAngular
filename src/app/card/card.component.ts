@@ -34,11 +34,16 @@ export class CardComponent implements OnInit {
     
   addtask(event)
   { 
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth()+1;
+    let yyyy = today.getFullYear();
+    let datenew = mm + '/' + dd + '/' + yyyy;
     this.notepmty();
     let taskobject={
       id:0,
       title:"",
-      date:"friday"
+      date:""
     }
      for (  let x of this.cards)
      {
@@ -53,6 +58,7 @@ export class CardComponent implements OnInit {
          }
         taskobject.title=task_input
          taskobject.id=++x.tid;
+         taskobject.date=datenew;
          x.list.push(taskobject);
        }
      }

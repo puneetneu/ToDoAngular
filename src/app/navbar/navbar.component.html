@@ -1,0 +1,16 @@
+
+<section class="section_1 clearfix">
+  <div class="todo">
+    </div><br>
+    <div class="title">
+     <p contenteditable="true" class="p1" id="title"  >Add Title</p>
+     <p contenteditable="true" class="p2" id="author" >Add Author</p>
+    </div>
+       
+       <input [(ngModel)]="tasktitle" type="text" id="main_input" placeholder="Task...">
+       <span  id="addBtn" class="addBtn" (click)="onClick()"><i class="material-icons">
+          note_add
+          </i></span> 
+          <div #alertContainer></div>
+          
+</section>

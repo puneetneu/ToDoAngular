@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+.section_1{
+    background-color: #4d4dafe3;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+
+    .todo
+    {
+    margin-bottom: 10px;
+    }
+
+    .title{
+        margin: 0px;
+        float: left;
+        width:75%;
+        
+        .p1{
+            margin: 0px;
+            float: left;
+            font-size: 20px;
+        }
+        
+        .p2{
+            margin: 0px;
+            float: right;
+            font-size: 20px;
+        }
+
+    }
+
+    input{
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+    }
+
+    .addBtn {
+        padding: 0px;
+        width: 25%;
+        background: #2a3ac7;
+        color: white;
+        float: left;
+        text-align: center;
+        font-size: 34px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 0;
+        font-weight: bld;
+    }
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

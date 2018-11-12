@@ -1,56 +1,27 @@
-# assignment-6-angular-webots
-# Project Title
+# Ng6
 
-To-Do App using Angular 6
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
-## Getting Started
+## Development server
 
-The objective of this assignment is to create a todo app using Angular 6 and incorporating the following features:
-1) Data binding
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-2) Component Interaction
+## Code scaffolding
 
-3) SCSS for styles
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-User can click Add to:
+## Build
 
-•   Add an event
-•   
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-### Prerequisites
+## Running unit tests
 
-    Webstorm
-    Nodejs
-    Angular
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-### Installing
+## Running end-to-end tests
 
-Install Angular by following the inscructions:https://angular.io/guide/quickstart
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Further help
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-### References
-
-```
-https://angular.io/guide/quickstart
-https://www.w3schools.com/
-https://www.typescriptlang.org/
-```
-
-
-
-
-
-
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -40,6 +40,14 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+### References
+
+```
+https://angular.io/guide/quickstart
+https://www.w3schools.com/
+https://www.typescriptlang.org/
+```
+
 
 
 

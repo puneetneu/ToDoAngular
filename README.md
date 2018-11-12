@@ -20,7 +20,7 @@ User can click Add to:
 ### Prerequisites
 
     Webstorm
-    Nojejs
+    Nodejs
     Angular
 
 ### Installing

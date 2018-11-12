@@ -1,0 +1,73 @@
+<!-- <div class="card ">
+    <div class="card_d1">
+            <span id="Title" contenteditable="true"> Shoping </span>  <span  class="close_card">&#9747;</span>
+    </div>
+    
+    <div class="clearfix"> <input type="text" id="input_t" class="input_task "> 
+        <span class="addtask">&#43;</span></div> 
+    <div class="list">
+    <div class="task ">
+      <span class="span_task">buy milk</span><br>
+      <span class="star"> &#9734;</span> <span class="close"> &#9747; </span>   
+      
+      <span class="e_f_r"> date &nbsp;</span> 
+    </div>
+
+    <div class="task ">
+        <span class="span_task">buy soap</span><br>
+        <span class="star"> &#9734;</span> <span class="close"> &#9747; </span>   
+        
+        <span class="e_f_r"> date &nbsp;</span> 
+      </div>
+    </div>
+    <div contenteditable="true" id="Author" class="author">Puneet</div>
+    
+
+
+</div>
+
+
+<div class="card " *ngFor="let c of card$" >
+  
+    <div class="card_d1">
+            <span id="Title" contenteditable="true">  </span> {{c.title}}  <span  class="close_card">&#9747;</span>
+    </div>
+    
+    <div class="clearfix"> <input type="text" id="input_t" class="input_task "> 
+        <span class="addtask">&#43;</span></div> 
+    <div class="list">
+    <div class="task " *ngFor="let t of c.list">
+      <span class="span_task"> {{t.title}} </span><br>
+      <span class="star"> &#9734;</span> <span class="close"> &#9747; </span>   
+      
+      <span class="e_f_r"> {{t.date}} &nbsp;</span> 
+    </div>
+    <div contenteditable="true" id="Author" class="author">{{c.author}}</div>
+    
+
+
+     </div>
+</div> -->
+
+<div class="card "  *ngFor="let c of cards" id={{c.id}} >
+  
+        <div class="card_d1">
+                <span id="Title" contenteditable="true"> {{c.title}}  </span>   <span (click)="closecard($event)" class="close_card">&#9747;</span>
+        </div>
+         
+        <div class="clearfix"> <input  type="text" id="input_t" class="input_task "> 
+            <span class="addtask" (click)="addtask($event)" >&#43;</span></div> 
+        <div class="list">
+        <div class="task " *ngFor="let t of c.list" id={{t.id}}>
+          <span class="span_task"> {{t.title}} </span><br>
+          <span (click)="star($event)" class="star"> &#9734;</span> <span (click)="closetask($event)" class="close"> &#9747; </span>   
+          
+          <span class="e_f_r"> {{t.date}} &nbsp;</span> 
+        </div>
+        <div contenteditable="true" id="Author" class="author">{{c.author}}</div>
+        
+    
+    
+         </div>
+ </div>
+    

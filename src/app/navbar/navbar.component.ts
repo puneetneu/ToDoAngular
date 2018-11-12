@@ -65,6 +65,11 @@ export class NavbarComponent implements AfterViewChecked ,AfterContentInit, OnIn
   
   onClick() : void 
     {
+      let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth()+1;
+    let yyyy = today.getFullYear();
+    let datenew = mm + '/' + dd + '/' + yyyy;
         if(this.tasktitle=="") {
           alert("plz enter value");
           return;
@@ -90,7 +95,7 @@ export class NavbarComponent implements AfterViewChecked ,AfterContentInit, OnIn
       object.title=document.getElementById("title").innerHTML;
       object.author=document.getElementById("author").innerText;
       taskobject.title=this.tasktitle;
-      taskobject.date="monday";
+      taskobject.date=datenew;
 
       object.list.push(taskobject);
       this.data.addcard(object);
@@ -117,6 +122,8 @@ export class NavbarComponent implements AfterViewChecked ,AfterContentInit, OnIn
   cping()
   {
     
+    
+
     for ( let x of this.card$)
      {
       this.id++;

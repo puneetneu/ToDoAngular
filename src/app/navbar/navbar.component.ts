@@ -9,7 +9,7 @@ import {ViewChild,
 import {CardComponent}  from '../card/card.component';
 import {CardsectionComponent} from '../cardsection/cardsection.component';
 import { nbind } from 'q';
-import { exists } from 'fs';
+
 
 @Component({
   selector: 'app-navbar',
@@ -18,7 +18,7 @@ import { exists } from 'fs';
 })
 export class NavbarComponent implements AfterViewChecked ,AfterContentInit, OnInit ,AfterViewInit ,OnDestroy {
    public tasktitle="";
-   card$ :Object= null;
+   card$ :any= null;
    public id=0;
    json:boolean = false;
    ngAfterViewInit()

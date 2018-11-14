@@ -12,7 +12,7 @@ export class CardComponent implements OnInit {
 
   public task="";
   card$ :Object;
-  cards :Array<any>=[] ;
+  cards :any=[] ;
   
   constructor(private data: DataService) {
      //this.cards.push("tanwar");
@@ -34,6 +34,7 @@ export class CardComponent implements OnInit {
     
   addtask(event)
   { 
+    
     let today = new Date();
     let dd = today.getDate();
     let mm = today.getMonth()+1;
